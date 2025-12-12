@@ -16,9 +16,10 @@ jobs :
 
       - name : executing remote sssh connection
         uses : appleboy/ssh-action@v1.2.0
-        with :
-          host : 16.16.183.244
-          username : ubuntu
-          key : ${{ secrets.PRIVATE_SSH_KEY }}
-          port : 22
-          script : whoami
+        with:
+          host: 16.16.183.244
+          username: ubuntu
+          key: ${{ secrets.PRIVATE_SSH_KEY }}
+          port: 22
+          script: whoami
+
