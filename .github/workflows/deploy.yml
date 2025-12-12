@@ -21,11 +21,6 @@ jobs :
           username: ubuntu
           key: ${{ secrets.PRIVATE_SSH_KEY }}
           port: 22
-          script: |
-            cd test-cicd
-            git pull origin master
-            npm install
-            npm run build
-            npm run dev
+          script: whoami
           
 
