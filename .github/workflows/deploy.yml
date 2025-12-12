@@ -24,8 +24,8 @@ jobs :
           script: |
             cd test-cicd
             git pull origin master
-            pnpm install
-            pnpm run build
-            pnpm run dev
+            npm install
+            npm run build
+            npm run dev
           
 
