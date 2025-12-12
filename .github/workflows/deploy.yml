@@ -26,6 +26,8 @@ jobs :
             git pull origin master
             npm install
             npm run build
-            npm run dev
+            pm2 stop cicdprac || true
+            pm2 start npm --name "cicdprac" -- start
+            pm2 save
           
 
